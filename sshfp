@@ -379,6 +379,8 @@ def main():
 	(options, args) = parser.parse_args()
 
 	# parse options
+	algos = options.algo or ["dsa", "rsa", "ecdsa", "ed25519"]
+	all_hosts = options.all_hosts
 	data = ""
 	dodns = options.scan
 	domain = ""
